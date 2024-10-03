@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/820889a34f.js" crossorigin="anonymous"></script>
+        <script src="main.js" defer></script> 
+    </head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="https://iiitl.ac.in/wp-content/uploads/2019/10/Final_Logo_IIITL.png" class="logo">
+            <ul class="Navul"  id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#Achievement">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>An Aspiring ML Engineer and Data Scientist </p>
+            <h1>Hi, I'm <span>Riya Jadhav</span><br> From India</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="riyau.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="about_me">Hello. My name is Riya Jadhav, I'm currently pursuing M.Sc. in Artificial Intelligence and Machine Learning from Indian Institute of Information Technology, Lucknow. I hold my Bachelor's degree in Statistics from University Of Mumbai. With a solid foundation in statistics, I specialize in developing scalable machine learning models using Python, SQL, and various ML frameworks. Passionate about AI and data, I thrive on transforming complex challenges into smart, impactful solutions.</p>
+            
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills & tools')">My Skills</p>
+                    <!-- <p class="tab-links" onclick="opentab('Tools')">Tools</p> -->
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('language')">Language</p>
+                </div>
+            
+                <!-- Skills Tab -->
+                <div class="tab-contents active-tab" id="skills & tools">
+                    <ul>
+                        <li><span><h2>Programming Languague</h2></span><br>Python, SQL, LaTex</li>
+                        <li><span><h2>Tools</h2></span><br>Excel, Power BI, MYSQL, Git, GitHub </li>
+                        <li><span><h2>Academic Coursework</h2></span><br>Machine Learning,Deep Learning,Natural Languague Processing, Cloud computing,DataBase Management System</li>
+                        <li><span><h2>Soft Skills</h2></span><br>Team-work, Professional Communication, Leadership, Time Management</li>
+                        <li><span><h2>Hobbies</h2></span><br>Reading, Drawing, Sports-Karate</li>
+                    </ul>
+                </div>
+
+                <!-- Education Tab -->
+                <div class="tab-contents" id="education">
+                    <div class="education-container">
+                        <div class="education-box">
+                            <h2>Master of Science</h2>
+                            <p>Artificial Intelligence & Machine Learning</p>
+                            <span>August 2023 - Pursuing</span>
+                            <p>Institute of Information Technology, Lucknow</p>
+                            <p>CGPA: 7.55</p>
+                        </div>
+                        <div class="education-box">
+                            <h2>Bachelor of Science</h2>
+                            <p>Statistics</p>
+                            <span>July 2020 - June 2023</span>
+                            <p>Kirti M. Doongursee College, University of Mumbai</p>
+                            <p>CGPA: 9.33</p>
+                        </div>
+                        <div class="education-box">
+                            <h2>12th Board Exam</h2>
+                            <P>March 2020</p>
+                            <p>Chh. Shivaji Junior College, Kolhapur</p>
+                            <p>Percentage: 75.08%</p>
+                        </div>
+                        <div class="education-box">
+                            <h2>10th Board Exam</h2>
+                            <p>March 2018</p>
+                            <p>A.S.D. Topiwalla High School, Malvan</p>
+                            <p>Percentage: 89.40%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Language Tab -->
+                <div class="tab-contents" id="language">
+                    <div class="language-container">
+                        <div class="language-box">
+                            <h2>English</h2>
+                        </div>
+                        <div class="language-box">
+                            <h2>Hindi</h2>
+                        </div>
+                        <div class="language-box">
+                            <h2>Marathi</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------ Potfolio------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div id="projectContainer" class="work-list">
+            <!-- Initial 3 projects always visible -->
+            <div class="work">
+                <img src="sqlp.png">
+                <div class="layer">
+                    <h3>Shark Tank Data Analysis</h3>
+                    <p>Analyzing business investment data to uncover entrepreneurial trends, investment patterns, and sector success rates.</p>
+                    <a href="https://github.com/riyajadhav06/SQL-PROJECT" target="_blank">
+                        <img src="https://www.svgrepo.com/show/507508/arrow-up-right.svg" alt="up-icon">
+                    </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="powerbi.png">
+                <div class="layer">
+                    <h3>Customer Complaint Dashboard</h3>
+                    <p>Developed a dashboard to highlight complaint trends, resolution times, and satisfaction levels for customer service improvement.</p>
+                    <a href="https://github.com/riyajadhav06/Customer-Complaints-Dashboard" target="_blank">
+                        <img src="https://www.svgrepo.com/show/507508/arrow-up-right.svg" alt="up-icon">
+                    </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image.png">
+                <div class="layer">
+                    <h3>Yoga Pose Identifier App</h3>
+                    <p>The Yoga Pose Identifier app uses AI to recognize and classify yoga poses, offering real-time feedback for pose accuracy.</p>
+                    <a href="https://github.com/riyajadhav06/Yoga_Pose_Finder_DL_Project" target="_blank">
+                        <img src="https://www.svgrepo.com/show/507508/arrow-up-right.svg" alt="up-icon">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Additional 3 hidden projects -->
+            <div class="work hidden">
+                <img src="Screenshot 2024-10-03 011026.png">
+                <div class="layer">
+                    <h3>Healthy Lifestyle Hackathon Project</h3>
+                    <p>A Healthy Lifestyle Prediction ML project uses machine learning to analyze user habits and predict whether they are following a healthy lifestyle based on factors like diet, exercise, sleep, and activity levels. The model offers actionable insights for improvement.</p>
+                    <a href="https://github.com/riyajadhav06/ml-project" target="_blank">
+                        <img src="https://www.svgrepo.com/show/507508/arrow-up-right.svg" alt="up-icon">
+                    </a>
+                </div>
+            </div>
+            <!-- <div class="work hidden">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.0iqvqUM-_MntTZp4CMBaigHaEK&pid=Api&P=0&h=180">
+                <div class="layer">
+                    <h3>Weather Prediction Model</h3>
+                    <p>Created a machine learning model to predict weather patterns and inform farming and logistics operations.</p>
+                    <a href="#" target="_blank">
+                        <img src="https://www.svgrepo.com/show/507508/arrow-up-right.svg" alt="up-icon">
+                    </a>
+                </div>
+            </div>
+            <div class="work hidden">
+                <img src="https://images4.alphacoders.com/115/thumb-1920-115716.jpg">
+                <div class="layer">
+                    <h3>E-Commerce Recommender System</h3>
+                    <p>Developed a recommender system that suggests products to customers based on their browsing and purchasing behavior.</p>
+                    <a href="#" target="_blank">
+                        <img src="https://www.svgrepo.com/show/507508/arrow-up-right.svg" alt="up-icon">
+                    </a>
+                </div>
+            </div> -->
+        </div>
+        <a href="#" id="seeMoreBtn" class="btn">See more</a>
+    </div>
+
+
+
+
+    <div class="more-project">
+        <div class="more-project-allItem">    
+            <div class="more-project-banner">
+                <h2 class="more-project-h2">Explore More Projects on GitHub</h2>
+                <p class="more-project-motivation">"Learn as if you will live forever, live like you will die tomorrow."</p>
+            </div>
+            
+            <div class="more-project-link">
+                <a href="https://github.com/riyajadhav06" class="view-more-btn" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+<!-- ----certi--------- -->
+<div id="portfolio">
+    <div class="container" id="Achievement">
+        <h1 class="sub-title">Achievements</h1>
+        <div class="work-list1" id="achievementContainer">
+            <!-- Initial 3 achievements -->
+            <div class="work1">
+                <img src="hackathon.png" alt="hackathon">
+                <div class="layer">
+                    <h3>Machine Learning Hackathon</h3>
+                    <p>To build a model to classify if a person is leading a Healthy Lifestyle or not using Machine learning algorithm. Secured Certificate of Merit with 83.32 hackathon score organized by IIT Guwahati.</p>
+                    <a href="https://github.com/riyajadhav06/Certi/blob/main/hackathon.png" target="_blank">
+                        <img src="https://www.svgrepo.com/show/507508/arrow-up-right.svg" alt="up-icon">
+                    </a>
+                </div>
+            </div>
+            <div class="work1">
+                <img src="aavi.png" alt="avishkar">
+                <div class="layer">
+                    <h3>Avishkar Research Convention: 2020-21</h3>
+                    <p>Presented a research proposal titled Mathematical Model: Covid-19 for Sindhudurg District in the Pure Sciences category at the 15th Avishkar Research Convention 2020-21, organized by the University of Mumbai.</p>
+                    <a href="https://github.com/riyajadhav06/Mathematical-Model-Covid-19-for-Sindhudurg-District" target="_blank">
+                        <img src="https://www.svgrepo.com/show/507508/arrow-up-right.svg" alt="up-icon">
+                    </a>
+                </div>
+            </div>
+            <div class="work1">
+                <img src="mkclc.png" alt="mkcl">
+                <div class="layer">
+                    <h3>MAHA-IT GENIUS TEST</h3>
+                    <p>Selected 2nd position: in MAHA-IT GENIUS TEST conducted by MKCL on MS-WORD 2013 Test (PET) (2013).</p>
+                    <a href="https://github.com/riyajadhav06/Certi/blob/main/mkclc.png" target="_blank">
+                        <img src="https://www.svgrepo.com/show/507508/arrow-up-right.svg" alt="up-icon">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Additional hidden achievements -->
+            <!-- <div class="work1 hidden">
+                <img src="https://static.vecteezy.com/system/resources/previews/021/180/192/non_2x/modern-certificate-of-achievement-template-free-vector.jpg" alt="achievement4">
+                <div class="layer">
+                    <h3>Achievement 4</h3>
+                    <p>Details about achievement 4.</p>
+                    <a href="#" target="_blank">
+                        <img src="https://www.svgrepo.com/show/507508/arrow-up-right.svg" alt="up-icon">
+                    </a>
+                </div>
+            </div>
+            <div class="work1 hidden">
+                <img src="hackathon.png" alt="achievement5">
+                <div class="layer">
+                    <h3>Achievement 5</h3>
+                    <p>Details about achievement 5.</p>
+                    <a href="#" target="_blank">
+                        <img src="https://www.svgrepo.com/show/507508/arrow-up-right.svg" alt="up-icon">
+                    </a>
+                </div>
+            </div>
+            <div class="work1 hidden">
+                <img src="https://blog.photoadking.com/wp-content/uploads/2023/04/1681206358006-1-1024x791.jpg" alt="achievement6">
+                <div class="layer">
+                    <h3>Achievement 6</h3>
+                    <p>Details about achievement 6.</p>
+                    <a href="#" target="_blank">
+                        <img src="https://www.svgrepo.com/show/507508/arrow-up-right.svg" alt="up-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <a href="#" id="seeMoreBtn1" class="btn1">More achievement</a>
+    </div> -->
+</div>
+
+
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-envelope"></i> riyajadhav0402@gmail.com</p>
+                <p><i class="fas fa-phone"></i> 8767358985</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="linkedin">
+                    </a>
+                    <a href="https://www.kaggle.com/" target="_blank">
+                        <img src="https://static-00.iconduck.com/assets.00/kaggle-icon-2048x2048-fxhlmjy3.png" alt="kaggle">
+                    </a>
+                    <a href="https://www.github.com" target="_blank">
+                        <img src="https://static-00.iconduck.com/assets.00/github-icon-2048x2048-823jqxdr.png" alt="github">
+                    </a>
+                </div>
+                <a href="https://drive.google.com/file/d/1D_mcUwzTbz-Loxs52p_7Qb8vujiBKygg/view?usp=sharing" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Riya. Made with <i class="fas fa-heart"></i> by 
+            <a href="https://www.youtube.com/channel/UCkjoHfkLEy7ZT4bA2myJ8xA?sub_confirmation=1" target="_blank">Easy Tutorials</a>
+        </p>
+    </div>
+</div>
+
+<!-- Font Awesome CDN for icons -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM5Z0VxS5tNHb6M9OG63IhhfDfQ5l5Hxplcyom" crossorigin="anonymous"></script>
+
+</body>
+</html>
